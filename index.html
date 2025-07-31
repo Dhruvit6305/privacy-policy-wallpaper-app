@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Wallpaper App</title>
+    <style>
+        :root {
+            --bg-light: #f9f9f9;
+            --text-light: #111;
+            --bg-dark: #1e1e1e;
+            --text-dark: #f1f1f1;
+            --accent: #4CAF50;
+            --header-gradient: linear-gradient(90deg, #4CAF50, #81C784);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: var(--header-gradient);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .toggle-theme {
+            background: white;
+            border: none;
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        body.dark .toggle-theme {
+            background: #333;
+            color: var(--text-dark);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            line-height: 1.7;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Wallpaper App Privacy</h1>
+        <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+    <main>
+        <h2>Overview</h2>
+        <p>This wallpaper app is developed and maintained by Dhruvit Suthar. The sole purpose of this app is to provide
+            users with high-quality wallpapers organized by category and orientation, ensuring a great browsing
+            experience.</p>
+
+        <h2>Information We Collect</h2>
+        <p><strong>No user data is collected.</strong> This app does not collect or share any personal or sensitive
+            information. We do not use third-party analytics, advertising, or tracking tools.</p>
+
+        <h2>Permissions</h2>
+        <p>The app may request the following permissions strictly for functional use:
+        <ul>
+            <li><strong>Set Wallpaper:</strong> Required to allow users to set wallpapers directly from within the app.
+            </li>
+            <li><strong>Storage Access:</strong> Needed to download wallpapers to the device and to display them in the
+                device's gallery.</li>
+            <li><strong>Media Scanner:</strong> Used to run a search or media scan function to ensure that downloaded
+                wallpapers appear in the device gallery.</li>
+        </ul>
+        These permissions are only used to deliver the features of the app. No personal data is collected, transmitted,
+        or stored by the app.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>This app is safe for users of all ages. We do not knowingly collect information from anyone, including
+            children under the age of 13.</p>
+
+        <h2>Policy Updates</h2>
+        <p>This Privacy Policy may be updated in the future. Any changes will be reflected on this page with an updated
+            effective date.</p>
+
+        <h2>Contact</h2>
+        <p>If you have any questions or concerns about this privacy policy, feel free to reach out:</p>
+        <ul>
+            <li><strong>Name:</strong> Dhruvit Suthar</li>
+            <li><strong>Email:</strong> <a href="mailto:dhruvit.aws@gmail.com">dhruvit.aws@gmail.com</a></li>
+        </ul>
+    </main>
+
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+        }
+    </script>
+</body>
+
+</html>
